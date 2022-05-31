@@ -251,3 +251,20 @@ img {
     font-size: 32px;
   }
 }
+
+// ===== PARTNER SECTION =====
+.partner {
+  &__text.section-text {
+    margin-bottom: 0;
+  }
+
+  &__group {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    justify-content: center;
+  }
+
+  &__img {
+    width: 150px;
+    justify-self: center;
+  }
+}
