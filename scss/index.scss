@@ -268,3 +268,32 @@ img {
     justify-self: center;
   }
 }
+
+// ===== WORK SECTION =====
+.work {
+  &__data {
+    text-align: center;
+  }
+
+  &__text.section-text {
+    margin-bottom: 0;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  &__content-title {
+    font-size: 18px;
+    font-weight: $font-bold;
+    margin-bottom: $margin-0-5;
+  }
+
+  &__button {
+    display: inline-flex;
+    justify-self: center;
+  }
+}
