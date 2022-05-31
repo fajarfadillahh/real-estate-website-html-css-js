@@ -1,5 +1,5 @@
 // ===== FONT GOOGLE =====
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
 // ===== VARIABLE SCSS =====
 // header height
@@ -21,6 +21,7 @@ $font-reguler: 400;
 $font-medium: 500;
 $font-semibold: 600;
 $font-bold: 700;
+$font-black: 800;
 
 // margin
 $margin-0-5: 0.5rem;
@@ -80,6 +81,10 @@ img {
   height: auto;
 }
 
+.main {
+  overflow: hidden;
+}
+
 // ===== REUSABLE SCSS CLASS =====
 // section class
 .section {
@@ -87,7 +92,7 @@ img {
 
   &-title {
     font-size: 26px;
-    font-weight: $font-bold;
+    font-weight: $font-black;
     color: $darkblue-color;
     line-height: $leading-title;
     margin-bottom: $margin-1;
@@ -136,6 +141,10 @@ img {
 
 .grid {
   display: grid;
+
+  &-gap {
+    gap: 3rem;
+  }
 }
 
 // ===== HEADER SECTION =====
@@ -157,7 +166,7 @@ img {
 
   &__logo {
     font-size: 20px;
-    font-weight: $font-bold;
+    font-weight: $font-black;
     color: $darkblue-color;
   }
 
@@ -213,5 +222,26 @@ img {
   .show-menu {
     opacity: 1;
     transform: scaleY(1);
+  }
+}
+
+// ===== HOME SECTION =====
+.home {
+  background-color: $lightblue-color;
+
+  &__data,
+  &__img {
+    justify-self: center;
+  }
+
+  &__subtitle {
+    display: block;
+    font-size: 15px;
+    color: $grey-color;
+    margin-bottom: $margin-0-5;
+  }
+
+  &__title {
+    font-size: 32px;
   }
 }
