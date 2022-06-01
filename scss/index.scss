@@ -414,3 +414,19 @@ img {
     }
   }
 }
+
+// ===== CONTACT SECTION =====
+.contact {
+  &__data {
+    text-align: center;
+  }
+
+  &__text.section-text {
+    margin-bottom: 0;
+  }
+
+  &__button {
+    display: inline-flex;
+    justify-self: center;
+  }
+}
