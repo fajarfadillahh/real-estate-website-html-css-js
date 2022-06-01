@@ -389,3 +389,28 @@ img {
     justify-self: center;
   }
 }
+
+// ===== STATISTIC SECTION =====
+.statistic {
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+
+  &__content {
+    justify-self: center;
+    text-align: center;
+
+    &-number {
+      font-size: 38px;
+      font-weight: $font-bold;
+      color: $darkblue-color;
+    }
+
+    &-text {
+      font-size: 15px;
+      color: $grey-color;
+    }
+  }
+}
