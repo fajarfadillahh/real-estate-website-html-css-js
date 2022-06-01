@@ -297,3 +297,87 @@ img {
     justify-self: center;
   }
 }
+
+// ===== FEATURE SECTION =====
+.feature {
+  &__bg {
+    padding: 5rem 0;
+    background-color: $lightblue-color;
+  }
+
+  &__data {
+    justify-self: center;
+  }
+
+  &__text.section-text {
+    margin-bottom: 0;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  &__content {
+    width: 300px;
+    background-color: $white-color;
+    border-radius: 1rem;
+    transition: $transition-400;
+
+    &:hover {
+      box-shadow: 0 2px 12px rgba($color: #000000, $alpha: 0.1);
+    }
+
+    &-box {
+      overflow: hidden;
+      border-radius: 1rem 1rem 0 0;
+    }
+
+    &-img {
+      height: 100%;
+    }
+
+    &-data {
+      display: grid;
+      gap: 1rem;
+      padding: 1.5rem 1rem;
+    }
+
+    &-title {
+      font-size: 18px;
+      font-size: $font-bold;
+      margin-bottom: $margin-0-5;
+    }
+
+    &-text,
+    &-span {
+      font-size: 15px;
+      color: $grey-color;
+    }
+
+    &-info,
+    &-wrapper {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    &-info {
+      gap: 2rem;
+    }
+
+    &-icon {
+      display: inline-flex;
+      font-size: 1.5rem;
+      color: $blue-color;
+    }
+  }
+
+  &__button {
+    display: inline-flex;
+    justify-self: center;
+  }
+}
